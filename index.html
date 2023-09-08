@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hi</title>
+	<link rel="stylesheet" type="text/css" href="t.css">
+</head>
+<body>
+	<header>
+        <ul>
+            <li><a href='#sec2' class="ev">about us</a></li>
+            <li><a href='#sec'>events</a></li>
+            <li><a href='https://www.instagram.com/taarangana/' target="_blank">gram</a></li>
+        </ul>
+
+    
+    </header>
+    <!-- <section>
+
+        <img src ="sun.png" id="sun">
+        <img src = "hellomt3.png" id="mt3">
+        <img src = "hellomt2.png" id="mt1">
+        
+    </section> -->
+
+    <div id="parallax-container">
+      <div style="background: url(https://github.com/tveshas/taarangna.github.io/blob/main/sun.png?raw=true);"></div>
+      <div style="background: url(https://github.com/tveshas/taarangna.github.io/blob/main/hellomt3.png?raw=true);"></div>
+      <div style="background: url(https://github.com/tveshas/taarangna.github.io/blob/main/hellomt2.png?raw=true);"></div>
+    </div>
+      <div id="content">
+        <div class="sec2" id="sec2">
+          <h2> About Us</h2>
+          <p>Taarangana, the annual cultural fest of IGDTUW, is not just a name, it is an emotion that brings us all together. The festival carves out a niche for itself because of the resolute women driving it.</p>
+       </div>
+      
+      
+      <div class="sec" id='sec'>
+          
+          <h2> About Our Events</h2>
+          <p> 
+  A college cultural fest is a one-of-a-kind event that celebrates the diversity of cultures and talents of the students. It is a platform for students to showcase their creativity, skills, and passion in a variety of areas, such as music, dance, drama, fine arts, literature, and debate.</p>
+          
+      </div>
+      <div class="cards" id="cards">
+        <div class="card">
+            <h2 class="card-title">Jashn-e-Natya</h2>
+            <img src='https://i.pinimg.com/564x/17/b9/44/17b944e299cc62939b977f9dfc198dac.jpg' alt="">
+            <p class="card-desc">Act off your main character era </p>
+        </div>
+    
+      <div class="card">
+        <h2 class="card-title">Mera Hi Jalwa</h2>
+        <img src='https://i.pinimg.com/564x/16/73/04/167304573f1b59004d9a6b56e5b3b782.jpg' alt="">
+        <p class="card-desc">Unleash the Jalwa inside you and become the next It girl of Taarangna</p>
+      </div>
+        <div class="card">
+        <h2 class="card-title">Spitfest</h2>
+        <img src='https://i.pinimg.com/564x/3d/f7/ef/3df7ef84102b5b020606b590c7493bf4.jpg' alt="">
+        <p class="card-desc"> "i disrespect you respectfully"~ 21 savage</p>
+      </div>
+        
+        <div class="card">
+        <h2 class="card-title">Jhoom-E-Jigar</h2>
+        <img src='https://i.pinimg.com/564x/00/83/60/008360a67417adf2367d10b659f264b4.jpg' alt="">
+        <p class="card-desc">Can you move on every beat? Can you take breaths away when dancing? Join and Compete</p>
+      </div>
+        
+        <div class="card">
+        <h2 class="card-title">Mein Shayar Toh Nahi</h2>
+        <img src='https://i.pinimg.com/564x/c6/e5/3e/c6e53e3d7ad50b68c40b7db145659e29.jpg' alt="">
+        <p class="card-desc">Alternatives to "Chaand teri roshni ka halka sa ek saya hei"? Most welcome to join our poetry fest.</p>
+      </div>
+        
+        <div class="card">
+        <h2 class="card-title">Rhetorical Revolution</h2>
+        <img src='https://i.pinimg.com/564x/63/21/68/6321688153a037bc386f0d681a411828.jpg' alt="">
+        <p class="card-desc">Want to argue on trending "Nation Wants To Know"? We're what you're looking for </p>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Hell's Kitchen</h2>
+        <img src='https://i.pinimg.com/564x/21/ad/99/21ad990622786c89ffe55f00913c4f60.jpg' alt="">
+        <p class="card-desc">A feast for the senses. A celebration of food. Foodies unite!</p>
+      </div>
+        <div class="card">
+        <h2 class="card-title">Adabi Mela </h2>
+        <img src='https://i.pinimg.com/736x/ff/c7/81/ffc781912d9f1c439e685b620bc05b55.jpg' alt="">
+        <p class="card-desc">From Dan Brown to JK rowling to Colleen Hoover. Join us to the literary fest.</p>
+      </div>
+        
+        <div class="card">
+        <h2 class="card-title">Sing Out, Sing Loud</h2>
+        <img src='https://i.pinimg.com/564x/f8/81/14/f88114a7b7dcf333e241487e64166686.jpg' alt="">
+        <p class="card-desc">Born to sing, forced to engineer? We got your back. It's your golden hour.</p>
+      </div>
+        
+        <div class="card">
+        <h2 class="card-title">Code-e-thon</h2>
+        <img src='https://i.pinimg.com/736x/a5/24/ce/a524ceca86906fd72925c1e571644500.jpg' alt="">
+        <p class="card-desc">hackathon to prove code is sharper than a sword.</p>
+      </div>
+        
+        
+        
+        </div>
+    </div>
+  
+
+    <script>
+
+window.addEventListener('scroll', () => {
+  let parent =  document.getElementById('parallax-container');
+  let children = parent.getElementsByTagName('div');
+  for(let i = 0; i < children.length; i++) {
+    children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+  }
+}, false)
+
+    
+    </script>
+
+</body>
+</html>
+
+
+
+
